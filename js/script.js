@@ -3,9 +3,16 @@ const app = new Vue({
     data: {
         discs: [],
     },
-    mounted() {
-        axios.get('http://localhost/php-ajax-dischi/api/php_index.php').then(response => {
-            this.discs = response.data;
-        }).catch(err => {console.log(err) });
-    }
+    methods: {
+        getAlbum() {
+            axios.get('http://localhost/php-ajax-dischi/api/php_index.php').then(response => {
+                this.discs = response.data;
+            }).catch(err => {console.log(err) });
+        }
+    },
+    created() {
+        this.getAlbum();
+    },
+   
+   
 })

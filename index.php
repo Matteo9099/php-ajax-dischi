@@ -14,7 +14,7 @@ require __DIR__ . '/db/discs.php';
 </head>
 <body>
 
-    <header class="d-flex align-items-center kustify-content-start">
+    <header class="d-flex align-items-center justify-content-start">
         <img src="img/logo-spotify-removebg-preview.png" alt="logo spotify">
     </header>
 
