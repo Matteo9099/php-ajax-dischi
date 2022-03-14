@@ -14,6 +14,10 @@ require __DIR__ . '/db/discs.php';
 </head>
 <body>
 
+    <header class="d-flex align-items-center kustify-content-start">
+        <img src="img/logo-spotify-removebg-preview.png" alt="logo spotify">
+    </header>
+
     <main>
         <section class="container" id="albums">
             <!-- snippet fine comando end per scrivere in HTML https://stackoverflow.com/questions/4600419/endforeach-in-loops  -->
